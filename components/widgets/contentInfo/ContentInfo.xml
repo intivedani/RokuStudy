@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<component name="ContentInfo" extends="Group">
+  <interface>
+        <field id="title" type="string" alias="title.text" />
+        <field id="season" type="string" alias="season.text" />
+        <field id="year" type="string" alias="year.text" />
+        <field id="gender" type="string" alias="gender.text" />
+        <field id="description" type="string" alias="description.text" />
+    </interface>
+
+
+    <script type="text/brightscript" uri="./ContentInfo.brs"/>
+
+    <children>
+        <LayoutGroup 
+            id="mainLayoutGroup"
+            itemSpacings="[10]">   
+            <Label id = "title"/>
+            <LayoutGroup
+                id="subLayoutGroup" 
+                layoutDirection="horiz"
+                itemSpacings="[5]"> 
+                    <Label id = "season"/>
+                    <Label id = "year"/>
+                    <Label id = "gender"/>
+            </LayoutGroup>
+            <Label id = "description"/>
+             <LayoutGroup
+                id="checkLayoutGroup" 
+                layoutDirection="horiz"
+                itemSpacings="[5]"> 
+                    <Poster id = "chulo"/>
+                    <Label id = "primeInfo"/>
+            </LayoutGroup>
+        </LayoutGroup>
+    </children>
+</component>

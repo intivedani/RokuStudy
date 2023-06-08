@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<component name="Home" extends="Group">
+
+    <interface>
+    </interface>
+
+    <script type="text/brightscript" uri="HomeView.brs" />
+
+    <children >
+        <ContentInfo
+            id="info" 
+            translation="[50,200]"
+            title="THE LION KING" 
+            year="1995"
+            gender="Infantil"
+            description="Set in a kingdom of lions in Africa, The Lion King tells the story of Simba (Swahili for lion), a lion cub who is to succeed his father, Mufasa, as King of the Pride Lands; however, after his paternal uncle Scar kills Mufasa to seize the throne, Simba is tricked into believing he was responsible for his father's death and flees into exile. After growing up in the company of the carefree outcasts Timon and Pumbaa, Simba receives valuable perspective from his childhood friend, Nala, and his shaman, Rafiki, before returning to challenge Scar to end his tyranny and take his place in the Circle of Life as the rightful king." >
+         </ContentInfo>
+          <RowList 
+            id="rowList"
+            translation="[50,600]" />
+    </children>
+
+</component>
