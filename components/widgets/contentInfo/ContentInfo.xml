@@ -9,29 +9,42 @@
         <field id="description" type="string" alias="description.text" />
     </interface>
 
-
-    <script type="text/brightscript" uri="./ContentInfo.brs"/>
+    <script type="text/brightscript" uri="ContentInfo.brs"/>
 
     <children>
         <LayoutGroup 
             id="mainLayoutGroup"
-            itemSpacings="[10]">   
-            <Label id = "title"/>
+            itemSpacings="[25]">   
+            <Label 
+                id="title"
+                font = "font:LargeBoldSystemFont"/>
             <LayoutGroup
                 id="subLayoutGroup" 
                 layoutDirection="horiz"
-                itemSpacings="[5]"> 
-                    <Label id = "season"/>
-                    <Label id = "year"/>
-                    <Label id = "gender"/>
+                itemSpacings="[100]"> 
+                    <Label id="season"/>
+                    <Label id="year"/>
+                    <Label id="gender"/>
             </LayoutGroup>
-            <Label id = "description"/>
+            <Label 
+                id="description"
+                width="900"
+                wrap="true"
+                numLines="4"/>
              <LayoutGroup
                 id="checkLayoutGroup" 
                 layoutDirection="horiz"
-                itemSpacings="[5]"> 
-                    <Poster id = "chulo"/>
-                    <Label id = "primeInfo"/>
+                itemSpacings="[15]"
+                vertAlignment="center"> 
+                    <Poster 
+                        id="chulo"
+                        uri="pkg:/images/chulo.png"
+                        width="50"
+                        height="50"/>
+                    <Label 
+                        id="primeInfo"
+                        text="Included with Prime"
+                        font="font:MediumBoldSystemFont"/>
             </LayoutGroup>
         </LayoutGroup>
     </children>

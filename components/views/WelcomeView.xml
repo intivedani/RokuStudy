@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<component name="WelcomeView" extends="Group">
+
+    <interface>
+    </interface>
+
+    <script type="text/brightscript" uri="WelcomeView.brs" />
+
+    <children>
+        <LayoutGroup 
+            id="layoutGroup"
+            layoutDirection="vert"
+            horizAlignment="center"
+            itemSpacings="[50]"
+            translation="[960,200]">   
+                <Label 
+                    id = "title"
+                    text="WELCOME CIRILO"/>
+                <Rectangle
+                    id="rectangle" 
+                    color="0xFFFFFFFF"
+                    width="500"
+                    height="500"> 
+                        <Poster 
+                            id = "poster"
+                            width="480"
+                            height="480"
+                            translation="[10,10]"
+                            uri="pkg:/images/Cirilo.png"/>
+                </Rectangle>
+                <Label 
+                    id = "message"
+                    text="¡Enjoy the content!"/>
+        </LayoutGroup>
+
+        
+    </children>
+
+</component>

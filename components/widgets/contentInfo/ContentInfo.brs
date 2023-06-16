@@ -1,5 +1,6 @@
 sub init()
     bindBaseComponents()
+    setStyles()
 end sub
 
 sub bindBaseComponents()
@@ -14,3 +15,11 @@ sub bindBaseComponents()
     m.chulo = m.top.findNode("chulo")
     m.primeInfo = m.top.findNode("primeInfo")
 end sub 
+
+sub setStyles()
+    titleFont = CreateObject("roSGNode", "Font")
+    titleFont.uri = "pkg:/fonts/font.otf"
+    titleFont.size = 36
+    m.title.font = titleFont
+end sub
+

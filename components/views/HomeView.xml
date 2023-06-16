@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
-<component name="Home" extends="Group">
+<component name="HomeView" extends="Group">
 
     <interface>
     </interface>
@@ -10,11 +10,12 @@
     <children >
         <ContentInfo
             id="info" 
-            translation="[50,200]"
+            translation="[5,200]"
             title="THE LION KING" 
+            season="Movie"
             year="1995"
             gender="Infantil"
-            description="Set in a kingdom of lions in Africa, The Lion King tells the story of Simba (Swahili for lion), a lion cub who is to succeed his father, Mufasa, as King of the Pride Lands; however, after his paternal uncle Scar kills Mufasa to seize the throne, Simba is tricked into believing he was responsible for his father's death and flees into exile. After growing up in the company of the carefree outcasts Timon and Pumbaa, Simba receives valuable perspective from his childhood friend, Nala, and his shaman, Rafiki, before returning to challenge Scar to end his tyranny and take his place in the Circle of Life as the rightful king." >
+            description="Set in a kingdom of lions in Africa, The Lion King tells the story of Simba, a lion cub who is to succeed his father, Mufasa, as King of the Pride Lands; however, after his paternal uncle Scar kills Mufasa to seize the throne, Simba is tricked into believing he was responsible for his father's death and flees into exile." >
          </ContentInfo>
           <RowList 
             id="rowList"
